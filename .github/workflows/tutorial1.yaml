@@ -14,7 +14,8 @@ jobs:
         runs-on: windows-latest
         steps:
         - name: step2
-          run: echo "today: $(date +%F)"
+          run: echo "today: $(Get-Date -Format yyyy-MM-dd)"
+
 
     job3:
         name: job3
